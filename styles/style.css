@@ -28,6 +28,7 @@ html {
   width: 1140px;
   margin: 0;
   padding: 0;
+  max-height: 534px;
 }
 
 .result {
@@ -68,12 +69,14 @@ fieldset {
 }
 
 .title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
   letter-spacing: 0%;
   text-transform: uppercase;
+  position: relative;
+  top: 5px;
 }
 
 .content__accent {
@@ -86,7 +89,7 @@ fieldset {
   border-right: none;
   border-left: none;
   color: #fff;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
@@ -94,6 +97,7 @@ fieldset {
   background-color: transparent;
   cursor: pointer;
   appearance: none;
+  min-height: 27px;
 }
 
 .search-form__textfield::placeholder {
@@ -104,15 +108,20 @@ fieldset {
   display: flex;
   flex-direction: column;
   border: none;
+  align-self: flex-end;
 }
 
 .search-form__fieldset-title {
-  margin-bottom: 5px;
-  font-family: "Fira Sans Condensed";
+  margin-bottom: 3px;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0%;
+}
+
+.search-form__fieldset-title-city {
+  margin-bottom: 7px;
 }
 
 .search-form__checkbox-list {
@@ -171,6 +180,10 @@ ol {
   text-decoration: none;
 }
 
+.content__card-link:active {
+  background-color: #545050;
+}
+
 .content__video-card {
   display: flex;
   align-items: start;
@@ -182,8 +195,9 @@ ol {
 
 .content__video-card-title {
   max-width: 196px;
+  margin-bottom: 6px;
   overflow: hidden;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
@@ -197,7 +211,7 @@ ol {
   display: -webkit-box;
   overflow: hidden;
   line-height: 16.2px;
-  -webkit-line-clamp: 1;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
 
@@ -234,9 +248,10 @@ ol {
 }
 
 .button {
+  min-height: 34px;
   border: 1px solid #fff;
   color: #fff;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 100%;
@@ -248,12 +263,11 @@ ol {
 .search-form__submit-button {
   align-self: flex-end;
   width: 194px;
-  height: 34px;
-  margin-bottom:;
 }
 
 .more-button {
   width: 100%;
+  margin-top: 30px;
   padding: 6px 0 6px 0;
 }
 
